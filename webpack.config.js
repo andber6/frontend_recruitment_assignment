@@ -23,3 +23,24 @@ module.exports = {
     contentBase: './dist'
   }
 };
+
+// var BUILD_DIR = path.resolve(__dirname, 'dist');
+// var APP_DIR = path.resolve(__dirname, 'src/index.js');
+
+// var config = {
+//   entry: APP_DIR,
+//   output: {
+//     path: BUILD_DIR,
+//     filename: 'bundle.js'
+//   },
+//   loaders : [
+//     {
+//       test : /\.js?/,
+//       include : APP_DIR,
+//       loader : 'babel-loader'
+//     }
+//   ]
+
+// };
+
+// module.exports = config;
