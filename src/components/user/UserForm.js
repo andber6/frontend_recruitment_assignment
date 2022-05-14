@@ -38,4 +38,4 @@ const UserForm = () => {
     )
 }
 
-export default UserList;
+export default UserForm;

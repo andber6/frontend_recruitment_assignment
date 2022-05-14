@@ -1,6 +1,6 @@
 import React from 'react'
 import UserForm from './components/user/UserForm';
-import UserList from './components/user/UserForm';
+import UserList from './components/user/UserList';
 
 const bodyStyle = {
     margin: "auto",
@@ -15,7 +15,6 @@ class UserApp extends React.Component {
     render() {
         return (
             <div>
-                test
                 <UserForm />
                 <UserList />
             </div>
