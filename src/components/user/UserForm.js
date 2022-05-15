@@ -2,6 +2,10 @@ import React, { useState } from 'react'
 import { onUserAdd, onUserDelete } from '../../features/user/userSlice'
 import { useAppDispatch, useAppSelector } from '../../setup/hooks'
 
+const formElement = {
+    margin: "20px"
+}
+
 const initialState = {
     name: '',
     email: '',
@@ -31,8 +35,12 @@ const UserForm = () => {
     return (
         <div>
             <h2>UserForm</h2>
-            <input name={"name"} value={userInputVal['name']} onInput={handleChange}></input>
-            <input name="email" value={userInputVal['email']} onInput={handleChange}></input>
+                <div style={formElement}>
+                Name:   <input name={"name"} value={userInputVal['name']} onChange={handleChange}/>
+                </div>
+                <div style={formElement}>
+                Email:  <input name="email" value={userInputVal['email']} onChange={handleChange}/>
+                </div>
             <button type={'submit'} onClick={handleSubmit}>Add user</button>
         </div> 
     )

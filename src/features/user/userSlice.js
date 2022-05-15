@@ -8,7 +8,7 @@ export const userSlice = createSlice(
         initialState,
         reducers: {
             onUserAdd: (state, action) => {
-                updatedState = {...state, [action.payload.email]: action.payload }
+                state = {...state, [action.payload.email]: action.payload }
                 return state;
             },
 

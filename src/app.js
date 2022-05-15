@@ -14,9 +14,14 @@ const userRow = {
 class UserApp extends React.Component {
     render() {
         return (
-            <div>
-                <UserForm />
-                <UserList />
+            <div style={bodyStyle}>
+                <h1>NBX frontend recruitment assignment</h1>
+                <div style={userRow}>
+                    <UserForm />
+                </div>
+                <div style={userRow}>
+                    <UserList />
+                </div>
             </div>
             // <div style={bodyStyle}>
             //     <h1>Users</h1>
