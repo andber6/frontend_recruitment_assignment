@@ -36,12 +36,12 @@ const UserForm = () => {
         <div>
             <h2>UserForm</h2>
                 <div style={formElement}>
-                Name:   <input name={"name"} value={userInputVal['name']} onChange={handleChange}/>
+                Name:   <input id="NameId" name={"name"} value={userInputVal['name']} onChange={handleChange}/>
                 </div>
                 <div style={formElement}>
-                Email:  <input name="email" value={userInputVal['email']} onChange={handleChange}/>
+                Email:  <input id="EmailId" name="email" value={userInputVal['email']} onChange={handleChange}/>
                 </div>
-            <button type={'submit'} onClick={handleSubmit}>Add user</button>
+            <button id="addUserButton" type={'submit'} onClick={handleSubmit}>Add user</button>
         </div> 
     )
 }

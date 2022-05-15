@@ -41,7 +41,7 @@ const UserList = () => {
                                 </span>
                                 <span>
                                     {email} &emsp;
-                                    <button style={flexEnd} name={email} onClick={handleDelete}>
+                                    <button id="deleteUserButton" style={flexEnd} name={email} onClick={handleDelete}>
                                         Delete User
                                     </button>
                                 </span>
