@@ -36,3 +36,8 @@ The user data should be stored in a redux store.
 
 - `yarn start`
 - Go to <http://localhost:8080>
+
+### Testing
+
+- `node_modules/.bin/cypress open`
+- Click test.spec.js to run all tests in the Cypress application
